@@ -9,7 +9,8 @@
 		<h3>Cat List:</h3>
 		<ul data-bind="foreach: catList">
 			<div data-bind="with: $data">
-				<li data-bind="text: name, click: $parents[1].switchCat"></li>
+				<li data-bind="text: name, click: $parents[1].switchCat">
+				</li>
 			</div>
 		</ul>
 	</div>
@@ -18,7 +19,8 @@
 		<div data-bind="text: level"></div>
 		<div data-bind="text: clickCount"></div>
 		<img id="cat-img" src="" alt="cute cat"
-			data-bind= "click: $parent.incrementCounter, attr: {src: imgSrc}">
+			data-bind= "click: $parent.incrementCounter,
+			 attr: {src: imgSrc}">
 		<div>
 			<h3>Nicknames:</h3>
 			<ul data-bind="foreach: nicknames">
